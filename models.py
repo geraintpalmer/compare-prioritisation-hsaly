@@ -133,7 +133,7 @@ def plot_results(list_of_recs, names, baseline):
             ppos_hslaydiff = (hsaly_diffs > 0).mean()
             sns.kdeplot(hsaly_diffs, ax=axarr[(1, i)], color='grey', linewidth=0, fill=True, clip=(0, None))
             sns.kdeplot(hsaly_diffs, ax=axarr[(1, i)], color='black', linewidth=2)
-            axarr[(1, i)].annotate(f"% with Positive\nHASALY = {round(ppos_hslaydiff * 100, 1)}%", (-0.05, 0.5), xycoords='axes fraction', fontsize=14)
+            axarr[(1, i)].annotate(f"% with Positive\nHSALY = {round(ppos_hslaydiff * 100, 1)}%", (-0.05, 0.5), xycoords='axes fraction', fontsize=14)
             axarr[(1, i)].spines['left'].set_position('zero')
             axarr[(1, i)].set_xlabel("HSALY Gained")
             axarr[(1, i)].spines['right'].set_visible(False)
